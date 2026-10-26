@@ -14,7 +14,8 @@ jobs:
       uses: actions/checkout@v4
 
     - name: ZIP entpacken
-      run: unzip -q *.zip -d . 
+      run: unzip -q .github/workflows/*.zip -d .
+ 
     
     - name: Node.js einrichten
       uses: actions/setup-node@v4
